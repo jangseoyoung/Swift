@@ -9,27 +9,27 @@
 import UIKit
 
 class ViewController: UIViewController {
-<<<<<<< Updated upstream
+
     var isZoom = false
     var imgOn : UIImage?
     var imgOff : UIImage?
     
     @IBOutlet var imgView: UIImageView!
     @IBOutlet var btnResize: UIButton!
-=======
+
     var isZoom = false  //이미지 확대 여부를 나타내는 bool타입의 변수
     var imgOn : UIImage?    //켜진 전구 이미지를 가지고 있는 UIImage 타입의 변수
     var imgOff : UIImage?   //꺼진 전구 이미지를 가지고 있는 UIImgae 타입의 변수
     
     @IBOutlet var imgView: UIImageView! //이미지 뷰에 대한 아웃렛 변수
     @IBOutlet var btnResize: UIButton!  //버튼에 대한 아웃렛 변수
->>>>>>> Stashed changes
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-<<<<<<< Updated upstream
+
         imgOn = UIImage(named: "lamp_on.png")
         imgOff = UIImage(named: "lamp_off.png")
         
@@ -58,7 +58,7 @@ class ViewController: UIViewController {
             imgView.image = imgOn
         }else{
             imgView.image = imgOff
-=======
+
         imgOn = UIImage(named: "lamp_on.png")   //imgOn에 "lamp_on.png"이미지를 할당
         imgOff = UIImage(named: "lamp_off.png") //imgOff에 "lamp_off.png"이미지를 할당
         
@@ -98,7 +98,7 @@ class ViewController: UIViewController {
             imgView.image = imgOn   //이미지 뷰의 이미지에 imgOn이미지를 할당
         }else{                      //만일 스위치가 Off이면
             imgView.image = imgOff  //이미지 뷰의 이미지에 imgOff 이미지를 할당
->>>>>>> Stashed changes
+
         }
     }
     
